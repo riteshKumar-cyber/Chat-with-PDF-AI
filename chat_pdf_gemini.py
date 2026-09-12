@@ -1,9 +1,13 @@
 import os
 import tempfile
 import streamlit as st
+from dotenv import load_dotenv
 from google import genai
 from pypdf import PdfReader
 import pdfplumber
+
+# Load environment variables from .env file
+load_dotenv()
 
 # -----------------------------------------------------------------------------
 # 1. Page Configuration
@@ -15,14 +19,9 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# API Key configuration
+# API Key configuration (loads from .env file)
 API_KEY = os.getenv("GEMINI_API_KEY", "")
-if not API_KEY:
-    p1 = "AIza" + "Sy"
-    p2 = "Ab8R" + "N6IV1tchJDE"
-    p3 = "kVlzl0vJQ" + "_qXN4"
-    p4 = "EhLZz6cDyeoK" + "9tZKvaaJg"
-    API_KEY = p1 + p2 + p3 + p4
+
 
 
 
