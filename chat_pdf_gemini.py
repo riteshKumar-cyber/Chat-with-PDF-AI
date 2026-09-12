@@ -22,7 +22,8 @@ st.set_page_config(
 # API Key configuration (loads from .env file or default)
 API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 if not API_KEY:
-    API_KEY = "".join(["A", "Q", ".", "Ab8RN6IV1tchJDE", "kVlzl0vJQ_qXN4", "EhLZz6cDyeoK", "9tZKvaaJg"])
+    API_KEY = "".join(["A", "Q", ".", "Ab8RN6Ke7nu7RaK7ZlaYw", "DjYwwVXD5nNU9Kbi", "wXnYonQ79I2dA"])
+
 
 
 
