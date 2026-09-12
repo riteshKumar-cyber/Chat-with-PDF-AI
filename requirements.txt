@@ -1,3 +1,5 @@
 streamlit
-embedchain
-streamlit-chat
+google-genai
+pypdf
+pdfplumber
+python-dotenv
